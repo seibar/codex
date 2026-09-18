@@ -1,0 +1,54 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "if [ -x '/Users/ajrabe/Library/Application Support/orca/agent-hooks/codex-hook.sh' ]; then /bin/sh '/Users/ajrabe/Library/Application Support/orca/agent-hooks/codex-hook.sh'; fi"
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "if [ -x '/Users/ajrabe/Library/Application Support/orca/agent-hooks/codex-hook.sh' ]; then /bin/sh '/Users/ajrabe/Library/Application Support/orca/agent-hooks/codex-hook.sh'; fi"
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "if [ -x '/Users/ajrabe/Library/Application Support/orca/agent-hooks/codex-hook.sh' ]; then /bin/sh '/Users/ajrabe/Library/Application Support/orca/agent-hooks/codex-hook.sh'; fi"
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "if [ -x '/Users/ajrabe/Library/Application Support/orca/agent-hooks/codex-hook.sh' ]; then /bin/sh '/Users/ajrabe/Library/Application Support/orca/agent-hooks/codex-hook.sh'; fi"
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "if [ -x '/Users/ajrabe/Library/Application Support/orca/agent-hooks/codex-hook.sh' ]; then /bin/sh '/Users/ajrabe/Library/Application Support/orca/agent-hooks/codex-hook.sh'; fi"
+          }
+        ]
+      }
+    ]
+  }
+}

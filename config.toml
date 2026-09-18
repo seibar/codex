@@ -1,0 +1,102 @@
+notify = ["/Users/ajrabe/.codex/computer-use/Codex Computer Use.app/Contents/SharedSupport/SkyComputerUseClient.app/Contents/MacOS/SkyComputerUseClient", "turn-ended"]
+model = "gpt-5.6-sol"
+model_reasoning_effort = "high"
+
+[hooks.state."/Users/ajrabe/.codex/hooks.json:session_start:0:0"]
+enabled = true
+trusted_hash = "sha256:4db77e4f7dfb9f916f9b3bea258604bdcd53e6f61d272e7751e489901920212b"
+[hooks.state."/Users/ajrabe/.codex/hooks.json:user_prompt_submit:0:0"]
+enabled = true
+trusted_hash = "sha256:82e1ee96085006877344f1a5c09e450ce5a6e8d7d6240800b6c741619eb05bdf"
+[hooks.state."/Users/ajrabe/.codex/hooks.json:pre_tool_use:0:0"]
+enabled = true
+trusted_hash = "sha256:a7d94abc8fa700e9680ed2634805af1396e067e228ac7ea81d62bf317f0db08f"
+[hooks.state."/Users/ajrabe/.codex/hooks.json:post_tool_use:0:0"]
+enabled = true
+trusted_hash = "sha256:81c5908aec72bbe3abd6a6f2e83ff9c8834c2ca9dfd46e8837a87439f503123c"
+[hooks.state."/Users/ajrabe/.codex/hooks.json:stop:0:0"]
+enabled = true
+trusted_hash = "sha256:09da79b695faa9c53c53eb508bc11092964aeb102b6b899dea789c44c287a335"
+
+[marketplaces.openai-bundled]
+last_updated = "2026-09-16T15:39:02Z"
+source_type = "local"
+source = "/Users/ajrabe/.codex/.tmp/bundled-marketplaces/openai-bundled"
+
+[marketplaces.openai-primary-runtime]
+last_updated = "2026-09-18T15:04:48Z"
+source_type = "local"
+source = "/Users/ajrabe/.cache/codex-runtimes/codex-primary-runtime/plugins/openai-primary-runtime"
+
+[plugins."browser@openai-bundled"]
+enabled = true
+
+[plugins."visualize@openai-bundled"]
+enabled = true
+
+[plugins."documents@openai-primary-runtime"]
+enabled = true
+
+[plugins."pdf@openai-primary-runtime"]
+enabled = true
+
+[plugins."spreadsheets@openai-primary-runtime"]
+enabled = true
+
+[plugins."presentations@openai-primary-runtime"]
+enabled = true
+
+[plugins."template-creator@openai-primary-runtime"]
+enabled = true
+
+[plugins."codex-app-tools@openai-bundled"]
+enabled = true
+
+[features]
+js_repl = false
+
+[mcp_servers.node_repl]
+args = []
+command = "/Users/ajrabe/Applications/ChatGPT.app/Contents/Resources/cua_node/bin/node_repl"
+startup_timeout_sec = 120
+
+[mcp_servers.node_repl.env]
+NODE_REPL_NATIVE_PIPE_CONNECT_TIMEOUT_MS = "1000"
+NODE_REPL_NODE_MODULE_DIRS = "/Users/ajrabe/Applications/ChatGPT.app/Contents/Resources/cua_node/lib/node_modules"
+NODE_REPL_NODE_PATH = "/Users/ajrabe/Applications/ChatGPT.app/Contents/Resources/cua_node/bin/node"
+NODE_REPL_TRUSTED_CODE_PATHS = "/Users/ajrabe/.codex:/Users/ajrabe/Applications/ChatGPT.app/Contents/Resources/cua_node/lib/node_modules"
+CODEX_HOME = "/Users/ajrabe/.codex"
+BROWSER_USE_AVAILABLE_BACKENDS = "chrome,iab"
+NODE_REPL_INSTRUCTIONS_USE_CASE_BROWSER = "Control the in-app browser in conjunction with the Browser Plugin."
+NODE_REPL_INSTRUCTIONS_USE_CASE_CHROME = "Control the Chrome browser in conjunction with the Chrome Plugin. Prefer this method of controlling Chrome over alternatives (such as Computer Use) unless the user explicitly mentions an alternative."
+NODE_REPL_INSTRUCTIONS_USE_CASE_COMPUTER_USE = "Control desktop apps on macOS through Computer Use."
+BROWSER_USE_CODEX_APP_BUILD_FLAVOR = "prod"
+BROWSER_USE_CODEX_APP_VERSION = "26.814.41407"
+NODE_REPL_TRUSTED_SERVICES = '{"browser":"/Users/ajrabe/.codex/plugins/cache/openai-bundled/browser/26.814.41407/scripts/browser-service.mjs","sky":"@oai/sky/service"}'
+CODEX_CLI_PATH = "/Users/ajrabe/Applications/ChatGPT.app/Contents/Resources/codex"
+
+[mcp_servers.computer-use]
+command = "./Codex Computer Use.app/Contents/SharedSupport/SkyComputerUseClient.app/Contents/MacOS/SkyComputerUseClient"
+args = ["mcp"]
+cwd = "."
+enabled = false
+
+[shell_environment_policy.set]
+NODE_REPL_TRUSTED_BROWSER_CLIENT_SHA256S = "028a14b6eaa6d98dac2aae00764345ab9f244801ed8493d42b9af3be5575006e,f204d340535055781952b10ed396de20b842f00a19e430852f7e121ad1ce91f6"
+
+[desktop]
+conversationDetailMode = "STEPS_COMMANDS"
+ambient-suggestions-enabled = false
+followUpQueueMode = "queue"
+
+[projects."/Users/ajrabe/development/document-parser"]
+trust_level = "trusted"
+
+[projects."/Users/ajrabe/development/api"]
+trust_level = "trusted"
+
+[projects."/Users/ajrabe/development/patient-registry"]
+trust_level = "trusted"
+
+[projects."/Users/ajrabe/development/codex"]
+trust_level = "trusted"
