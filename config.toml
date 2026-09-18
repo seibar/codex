@@ -1,5 +1,5 @@
 notify = ["/Users/ajrabe/.codex/computer-use/Codex Computer Use.app/Contents/SharedSupport/SkyComputerUseClient.app/Contents/MacOS/SkyComputerUseClient", "turn-ended"]
-model = "gpt-5.6-sol"
+model = "gpt-6-astra"
 model_reasoning_effort = "high"
 approval_policy = "on-request"
 approvals_reviewer = "auto_review"
